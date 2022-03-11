@@ -4,9 +4,8 @@ The demo code for the application of the generated patches on a batch from the I
 
 <img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet-Patch-schema.png" 
      width=700px 
-     height=auto />
-     
-![alt text](https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet-Patch-schema.png)
+     height=auto
+     class="center"/>
 
 ## :world_map: Documentation
 
@@ -17,8 +16,6 @@ Tutorial -> you can find a detailed example of how to use ImageNet-Patch in your
 # :joystick: Example
 
 ### How can I load the patches?
-
-![alt text](https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet_Patch.png)
 
 You can find the patches saved in assets/patches.gz in the form (patches, targets),
 where patches and targets are pytorch tensors respectively with shape (10, 3, 224, 224) and (10,).
@@ -32,11 +29,14 @@ patch = patches[1]  # get the patch with id=1
 target = targets[1]
 ```
 
+<img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet-Patch.png" 
+     width=700px 
+     height=auto
+     class="center"/>
+
 
 
 ### How can I use them to make predictions?
-
-![alt text](https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet_Patch_Predictions.png)
 
 Once a patch is selected it can be used 
 instantiating the ApplyPatch module in the preprocessing stack, just before the normalizer!
@@ -63,6 +63,11 @@ preprocess = Compose([Resize(256), CenterCrop(224), ToTensor(),
                       ])
 ```
 
+
+<img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet-Patch_Predictions.png" 
+     width=700px 
+     height=auto
+     class="center"/>
 
 
 # :newspaper: Citation
