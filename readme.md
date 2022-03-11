@@ -2,6 +2,10 @@
 
 The demo code for the application of the generated patches on a batch from the Imagenet dataset.
 
+<img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet-Patch-schema.png" 
+     width="400" 
+     height="500" />
+     
 ![alt text](https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet-Patch-schema.png)
 
 ## :world_map: Documentation
