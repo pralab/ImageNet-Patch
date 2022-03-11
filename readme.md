@@ -19,7 +19,7 @@ Tutorial -> you can find a detailed example of how to use ImageNet-Patch in your
 ### How can I load the patches?
 
 <p align="center">
-     <img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet-Patch.png" 
+     <img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet_Patch.png" 
           width=700px 
           height=auto/>
 </p>
@@ -67,7 +67,7 @@ preprocess = Compose([Resize(256), CenterCrop(224), ToTensor(),
 ```
 
 
-<img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet-Patch_Predictions.png" 
+<img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet_Patch_Predictions.png" 
      width=700px 
      height=auto
      class="center"/>
