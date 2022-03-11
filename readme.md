@@ -11,4 +11,3 @@ Once a patch with its associated target class is selected it can be used simply
 instantiating the ApplyPatch module in the preprocessing stack, just before the normalizer!
 To instantiate this module we must specify the patch, the target class and the affine transformation
 ranges (translation_range, rotation_range, scale_range), for which the parameters will be random sampled when an image is taken.
-
