@@ -79,9 +79,11 @@ preprocess = Compose([Resize(256), CenterCrop(224), ToTensor(),
 If you use Imagenet-Patch in your work, please cite us using the following BibTeX entry:
 
 ```
-@inproceedings{Pintor2022ImageNetPatchAD,
+@article{Pintor2022ImageNetPatchAD,
   title={ImageNet-Patch: A Dataset for Benchmarking Machine Learning Robustness against Adversarial Patches},
   author={Maura Pintor and Daniele Angioni and Angelo Sotgiu and Luca Demetrio and Ambra Demontis and Battista Biggio and Fabio Roli},
-  year={2022}
+  journal={ArXiv},
+  year={2022},
+  volume={abs/2203.04412}
 }
 ```
