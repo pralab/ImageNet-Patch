@@ -67,11 +67,12 @@ preprocess = Compose([Resize(256), CenterCrop(224), ToTensor(),
 ```
 
 
-<img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet_Patch_Predictions.png" 
-     width=700px 
-     height=auto
-     class="center"/>
 
+<p align="center">
+     <img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet_Patch_Predictions.png" 
+          width=500px 
+          height=auto/>
+</p>
 
 # :newspaper: Citation
 
