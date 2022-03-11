@@ -1,38 +1,3 @@
-"""
-REQUISITI DEL REPO
--le patch
--uno script che data un'immagine applica le patch con le nostre trasformazioni
--ovviamente file requirements e readme
--(opzionale) qualche immagine di esempio
--(opzionale ma meglio averlo) un "example.py" pronto da far girare che fa anche il test su un modello e qualche immagine
-
-IMPLEMENTAZIONE
--patch: tensori? np array? png? (magari png così si possono sia guardare che usare nel codice) BOTH
-    id target label, (x,y) patches.gz -> in png 878-banana.png
--trasformazioni: usiamo i seed o salviamo i parametri? Meglio la seconda secondo me, ma devo capire come fare
--applicazione patch su img: funzione/metodo apply_patch (img, patch, transform)
-    includere codice delle transform a prescindere
--immagine di esempio: si può mettere quella del paper con le predictions?
--example.py: devo fare la pappa pronta per testbed e robustbench o posso mettere solo modello torchvision comodo?
-
-DUBBI
-Devo usare lo stesso indexing del paper? Prendere il test set di robustbench, togliere i sample della classe target ecc...
-
-- Nel readme dire di procurarsi validation di imagenet e poi usare utility per idx di robustbench
-
-- classe che data img restituisce immagine con patch
-
-carica modello
-carica dati (batch) -> da mettere in cartella assets/dati da caricare come dataset ImageFolder
-applica patch
-test img con patch
-
-
-<<<esempio minimale>>>
-istanzia ApplyPatch
-inserisci nelle transform (before normalization)
-
-"""
 import torchvision
 from torchvision.datasets import ImageFolder
 from torch.utils.data import DataLoader
