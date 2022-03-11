@@ -1,15 +1,28 @@
-# **ImageNet-Patch**
+# **ImageNet-Patch: A Dataset for Benchmarking Machine Learning Robustness against Adversarial Patches**
 
 The demo code for the application of the generated patches on a batch from the Imagenet dataset.
 
+<p align="center">
+     <img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet-Patch-schema.png" 
+          width=700px 
+          height=auto/>
+</p>
 
-# Documentation
+## :world_map: Documentation
 
 Paper -> Preprint available at https://arxiv.org/abs/2203.04412
 
-Tutorial -> link file example.py, a detailed example of how to use ImageNet-Patch in your model predictions
+Tutorial -> you can find a detailed example of how to use ImageNet-Patch in your model predictions in https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/example.py
 
-# How can I load the patches?
+# :joystick: Example
+
+### How can I load the patches?
+
+<p align="center">
+     <img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet_Patch.png" 
+          width=700px 
+          height=auto/>
+</p>
 
 You can find the patches saved in assets/patches.gz in the form (patches, targets),
 where patches and targets are pytorch tensors respectively with shape (10, 3, 224, 224) and (10,).
@@ -22,6 +35,11 @@ with gzip.open(os.path.join(os.getcwd(), "assets/patches.gz"), 'rb') as f:
 patch = patches[1]  # get the patch with id=1
 target = targets[1]
 ```
+
+
+
+
+### How can I use them to make predictions?
 
 Once a patch is selected it can be used 
 instantiating the ApplyPatch module in the preprocessing stack, just before the normalizer!
@@ -48,6 +66,22 @@ preprocess = Compose([Resize(256), CenterCrop(224), ToTensor(),
                       ])
 ```
 
-# Citation
 
-bibtek arxiv
+
+<p align="center">
+     <img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet_Patch_Predictions.png" 
+          width=500px 
+          height=auto/>
+</p>
+
+# :newspaper: Citation
+
+If you use Imagenet-Patch in your work, please cite us using the following BibTeX entry:
+
+```
+@inproceedings{Pintor2022ImageNetPatchAD,
+  title={ImageNet-Patch: A Dataset for Benchmarking Machine Learning Robustness against Adversarial Patches},
+  author={Maura Pintor and Daniele Angioni and Angelo Sotgiu and Luca Demetrio and Ambra Demontis and Battista Biggio and Fabio Roli},
+  year={2022}
+}
+```
