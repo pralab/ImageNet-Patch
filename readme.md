@@ -1,4 +1,4 @@
-# **ImageNet-Patch**
+# **ImageNet-Patch: A Dataset for Benchmarking Machine Learning Robustness against Adversarial Patches**
 
 The demo code for the application of the generated patches on a batch from the Imagenet dataset.
 
