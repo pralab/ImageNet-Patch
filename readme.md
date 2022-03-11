@@ -1,12 +1,12 @@
 # **ImageNet-Patch**
 
 The demo code for the application of the generated patches on a batch from the Imagenet dataset.
-<!-- 
+
 <p align="center">
      <img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet-Patch-schema.png" 
           width=700px 
           height=auto/>
-</p> -->
+</p>
 
 ## :world_map: Documentation
 
@@ -17,6 +17,12 @@ Tutorial -> you can find a detailed example of how to use ImageNet-Patch in your
 # :joystick: Example
 
 ### How can I load the patches?
+
+<p align="center">
+     <img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet-Patch.png" 
+          width=700px 
+          height=auto/>
+</p>
 
 You can find the patches saved in assets/patches.gz in the form (patches, targets),
 where patches and targets are pytorch tensors respectively with shape (10, 3, 224, 224) and (10,).
@@ -30,11 +36,7 @@ patch = patches[1]  # get the patch with id=1
 target = targets[1]
 ```
 
-<p align="center">
-     <img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet-Patch.png" 
-          width=700px 
-          height=auto/>
-</p>
+
 
 
 ### How can I use them to make predictions?
