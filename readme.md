@@ -3,7 +3,7 @@
 The demo code for the application of the generated patches on a batch from the Imagenet dataset.
 
 <img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet-Patch-schema.png" 
-     width=400px 
+     width=700px 
      height=auto />
      
 ![alt text](https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet-Patch-schema.png)
