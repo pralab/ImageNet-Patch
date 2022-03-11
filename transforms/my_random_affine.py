@@ -3,16 +3,6 @@ from torch import Tensor
 from torchvision.transforms import functional as F
 
 
-class MyCompose(torchvision.transforms.Compose):
-    def __call__(self, img, mask):
-        for t in self.transforms:
-            if isinstance(t, MyRandomAffine):
-                img = t(img, mask)
-            else:
-                img = t(img)
-        return img
-
-
 class MyRandomAffine(torchvision.transforms.RandomAffine):
     def forward(self, img, mask):
         fill = self.fill
