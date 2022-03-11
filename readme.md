@@ -3,7 +3,7 @@
 The demo code for the application of the generated patches on a batch from the Imagenet dataset.
 
 <p align="center">
-     <img src="https://github.com/pralab/ImageNet-Patch/blob/master/assets/Imagenet-Patch-schema.png" 
+     <img src="./assets/Imagenet-Patch-schema.png" 
           width=700px 
           height=auto/>
 </p>
@@ -12,14 +12,14 @@ The demo code for the application of the generated patches on a batch from the I
 
 **Paper**: Preprint available at https://arxiv.org/abs/2203.04412
 
-**Tutorial**: You can find a detailed example of how to use ImageNet-Patch in your model predictions in [this script](https://github.com/pralab/ImageNet-Patch/blob/master/example.py).
+**Tutorial**: You can find a detailed example of how to use ImageNet-Patch in your model predictions in [this script](./example.py).
 
 # :joystick: Example
 
 ### How can I load the patches?
 
 <p align="center">
-     <img src="https://github.com/pralab/ImageNet-Patch/blob/master/assets/Imagenet_Patch.png" 
+     <img src="./assets/Imagenet_Patch.png" 
           width=700px 
           height=auto/>
 </p>
@@ -69,7 +69,7 @@ preprocess = Compose([Resize(256), CenterCrop(224), ToTensor(),
 
 
 <p align="center">
-     <img src="https://github.com/pralab/ImageNet-Patch/blob/master/assets/Imagenet_Patch_Predictions.png" 
+     <img src="./assets/Imagenet_Patch_Predictions.png" 
           width=500px 
           height=auto/>
 </p>
