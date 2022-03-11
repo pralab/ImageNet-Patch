@@ -10,9 +10,9 @@ The demo code for the application of the generated patches on a batch from the I
 
 ## :world_map: Documentation
 
-Paper -> Preprint available at https://arxiv.org/abs/2203.04412
+**Paper**: Preprint available at https://arxiv.org/abs/2203.04412
 
-Tutorial -> you can find a detailed example of how to use ImageNet-Patch in your model predictions in https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/example.py
+**Tutorial**: You can find a detailed example of how to use ImageNet-Patch in your model predictions in https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/example.py
 
 # :joystick: Example
 
