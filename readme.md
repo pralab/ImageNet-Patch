@@ -2,10 +2,11 @@
 
 The demo code for the application of the generated patches on a batch from the Imagenet dataset.
 
-<img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet-Patch-schema.png" 
-     width=700px 
-     height=auto
-     class="center"/>
+<p align="center">
+     <img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet-Patch-schema.png" 
+          width=700px 
+          height=auto/>
+</p>
 
 ## :world_map: Documentation
 
@@ -29,11 +30,11 @@ patch = patches[1]  # get the patch with id=1
 target = targets[1]
 ```
 
-<img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet-Patch.png" 
-     width=700px 
-     height=auto
-     class="center"/>
-
+<p align="center">
+     <img src="https://github.com/DanieleAngioni97/ImageNet-Patch/blob/master/assets/Imagenet-Patch.png" 
+          width=700px 
+          height=auto/>
+</p>
 
 
 ### How can I use them to make predictions?
