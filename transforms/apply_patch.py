@@ -3,7 +3,7 @@ from transforms.my_random_affine import MyRandomAffine
 
 class ApplyPatch(torch.nn.Module):
 
-    def __init__(self, patch, target, translation_range=(.2, .2), rotation_range=45,
+    def __init__(self, patch, translation_range=(.2, .2), rotation_range=45,
                  scale_range=(0.5, 1), patch_size=50):
         super().__init__()
         self.patch_size = patch_size
@@ -13,7 +13,7 @@ class ApplyPatch(torch.nn.Module):
 
         self._transforms = None
         self.set_transforms(translation_range, rotation_range, scale_range)
-        self.set_patch(patch, target)
+        self.set_patch(patch)
 
     @property
     def mask(self):
@@ -23,10 +23,9 @@ class ApplyPatch(torch.nn.Module):
     def transforms(self):
         return self._transforms
 
-    def set_patch(self, patch, target):
+    def set_patch(self, patch):
         self.patch = patch
         self.input_shape = self.patch.shape
-        self.target = target
         self._mask = self._generate_mask()
 
     def _generate_mask(self):
