@@ -25,9 +25,3 @@ class MyRandomAffine(torchvision.transforms.RandomAffine):
         transf_mask = F.affine(mask, *ret, interpolation=self.interpolation,
                                fill=fill)
         return transf_img, transf_mask
-
-
-def show_image(img):
-    import matplotlib.pyplot as plt
-    plt.imshow(img.permute(1, 2, 0).detach().cpu())
-    plt.show()
