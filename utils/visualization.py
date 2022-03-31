@@ -52,7 +52,7 @@ def plot_imagenet_patch(patches, targets):
         patch = patch[upp_l_x:bott_r_x, upp_l_y:bott_r_y, :]
 
         plt.subplot(2, 5, i+1)
-        plt.title(target_to_classname[target])
+        plt.title(target_to_classname[int(target.item())])
         plt.imshow(patch)
         plt.axis('off')
     plt.show()
