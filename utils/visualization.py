@@ -1,4 +1,5 @@
 from torchvision.transforms import Normalize
+from torchvision.utils import make_grid
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -21,13 +22,12 @@ def _tensor_to_show(img, transforms=None):
     npimg = np.transpose(npimg, (1, 2, 0))
     return npimg
 
-def imshow(img, transforms=None):
+def imshow(img, transforms=None, figsize=(10, 20)):
     npimg = _tensor_to_show(img, transforms)
-    plt.figure()
+    plt.figure(figsize=figsize)
     plt.imshow(npimg, interpolation=None)
-    plt.show()
 
-def plot_imagenet_patch(patches, targets):
+def show_imagenet_patch(patches, targets):
     upp_l_x = 224 // 2 - 50 // 2
     upp_l_y = 224 // 2 - 50 // 2
     bott_r_x = 224 // 2 + 50 // 2
@@ -55,4 +55,11 @@ def plot_imagenet_patch(patches, targets):
         plt.title(target_to_classname[str(int(target.item()))])
         plt.imshow(patch)
         plt.axis('off')
+    plt.show()
+
+
+def show_batch_with_patch(x, transforms=None, figsize=(10, 20)):
+    imshow(make_grid(x.cpu().detach(), nrow=5),
+           transforms=transforms, figsize=figsize)
+    plt.axis('off')
     plt.show()
