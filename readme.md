@@ -12,7 +12,7 @@ The demo code for the application of the generated patches on a batch from the I
 
 **Paper**: Preprint available at https://arxiv.org/abs/2203.04412
 
-**Tutorial**: You can find a detailed example of how to use ImageNet-Patch in your model predictions in [this script](./example.py).
+**Tutorial**: You can find a detailed example of how to use ImageNet-Patch in your model predictions in [this script](./example.py) and our [tutorial notebook](./imagenet_patch_example.ipynb).
 
 # :joystick: Example
 
@@ -35,8 +35,6 @@ with gzip.open(os.path.join(os.getcwd(), "assets/patches.gz"), 'rb') as f:
 patch = patches[1]  # get the patch with id=1
 target = targets[1]
 ```
-
-
 
 
 ### How can I use them to make predictions?
