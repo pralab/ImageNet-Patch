@@ -72,6 +72,10 @@ preprocess = Compose([Resize(256), CenterCrop(224), ToTensor(),
           height=auto/>
 </p>
 
+# :printer: Printed Patches applied to Real-World Objects
+As an additional experiment, we print and apply our 10 adversarial patches on 3 different real-world objects, with 3 different roto-translations, thus acquiring 90 photos that can be [downloaded here](https://www.dropbox.com/scl/fo/6pin19joxsu3yp5sjzm0u/h?dl=0&rlkey=60eor85ral2bmytnuty397en6).
+
+
 # :newspaper: Citation
 
 If you use Imagenet-Patch in your work, please cite us using the following BibTeX entry:
