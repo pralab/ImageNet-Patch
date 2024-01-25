@@ -83,11 +83,13 @@ As an additional experiment, we print and apply our 10 adversarial patches on 3 
 If you use Imagenet-Patch in your work, please cite us using the following BibTeX entry:
 
 ```
-@article{Pintor2022ImageNetPatchAD,
-  title={ImageNet-Patch: A Dataset for Benchmarking Machine Learning Robustness against Adversarial Patches},
-  author={Maura Pintor and Daniele Angioni and Angelo Sotgiu and Luca Demetrio and Ambra Demontis and Battista Biggio and Fabio Roli},
-  journal={ArXiv},
-  year={2022},
-  volume={abs/2203.04412}
+@article{pintor2023imagenet,
+  title={ImageNet-Patch: A dataset for benchmarking machine learning robustness against adversarial patches},
+  author={Pintor, Maura and Angioni, Daniele and Sotgiu, Angelo and Demetrio, Luca and Demontis, Ambra and Biggio, Battista and Roli, Fabio},
+  journal={Pattern Recognition},
+  volume={134},
+  pages={109064},
+  year={2023},
+  publisher={Elsevier}
 }
 ```
